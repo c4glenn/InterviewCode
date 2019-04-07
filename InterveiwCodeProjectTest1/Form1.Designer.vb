@@ -22,43 +22,43 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnSelectImage = New System.Windows.Forms.Button()
+        Me.picImage = New System.Windows.Forms.PictureBox()
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnSelectImage
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnSelectImage.Location = New System.Drawing.Point(12, 12)
+        Me.btnSelectImage.Name = "btnSelectImage"
+        Me.btnSelectImage.Size = New System.Drawing.Size(107, 23)
+        Me.btnSelectImage.TabIndex = 0
+        Me.btnSelectImage.Text = "Select Image"
+        Me.btnSelectImage.UseVisualStyleBackColor = True
         '
-        'PictureBox1
+        'picImage
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 57)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(240, 171)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
+        Me.picImage.Location = New System.Drawing.Point(0, 56)
+        Me.picImage.Name = "picImage"
+        Me.picImage.Size = New System.Drawing.Size(240, 171)
+        Me.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.picImage.TabIndex = 1
+        Me.picImage.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.picImage)
+        Me.Controls.Add(Me.btnSelectImage)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.picImage, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnSelectImage As Button
+    Friend WithEvents picImage As PictureBox
 End Class
