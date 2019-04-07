@@ -5,7 +5,12 @@
         opf.Filter = "Choose Image(*.jpg;*.png;*.gif;*.jpeg)|*.jpg;*.png;*.gif;*.jpeg"
 
         If opf.ShowDialog = DialogResult.OK Then
-            picImage.Image = Image.FromFile(opf.FileName)
+            Try
+                picImage.Image = Image.FromFile(opf.FileName)
+            Catch ex As Exception
+                MessageBox.Show("Something is wrong with the file you selected")
+            End Try
+
         End If
 
     End Sub
