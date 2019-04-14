@@ -37,53 +37,50 @@ Partial Class Form1
         '
         'btnSelectImage
         '
-        Me.btnSelectImage.Location = New System.Drawing.Point(12, 12)
+        Me.btnSelectImage.Location = New System.Drawing.Point(535, 12)
         Me.btnSelectImage.Name = "btnSelectImage"
-        Me.btnSelectImage.Size = New System.Drawing.Size(107, 23)
+        Me.btnSelectImage.Size = New System.Drawing.Size(137, 23)
         Me.btnSelectImage.TabIndex = 0
-        Me.btnSelectImage.Text = "Select Image"
+        Me.btnSelectImage.Text = "Select Image..."
         Me.btnSelectImage.UseVisualStyleBackColor = True
         '
         'picImage
         '
         Me.picImage.Cursor = System.Windows.Forms.Cursors.Cross
         Me.picImage.Enabled = False
-        Me.picImage.Location = New System.Drawing.Point(12, 41)
+        Me.picImage.Location = New System.Drawing.Point(2, 12)
         Me.picImage.Name = "picImage"
-        Me.picImage.Size = New System.Drawing.Size(528, 397)
+        Me.picImage.Size = New System.Drawing.Size(528, 426)
         Me.picImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.picImage.TabIndex = 1
         Me.picImage.TabStop = False
         '
         'lblHue
         '
-        Me.lblHue.AutoSize = True
         Me.lblHue.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHue.Location = New System.Drawing.Point(205, 13)
+        Me.lblHue.Location = New System.Drawing.Point(575, 42)
         Me.lblHue.Name = "lblHue"
-        Me.lblHue.Size = New System.Drawing.Size(24, 25)
+        Me.lblHue.Size = New System.Drawing.Size(97, 25)
         Me.lblHue.TabIndex = 2
-        Me.lblHue.Text = "0"
+        Me.lblHue.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblSaturation
         '
-        Me.lblSaturation.AutoSize = True
         Me.lblSaturation.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSaturation.Location = New System.Drawing.Point(346, 12)
+        Me.lblSaturation.Location = New System.Drawing.Point(574, 100)
         Me.lblSaturation.Name = "lblSaturation"
-        Me.lblSaturation.Size = New System.Drawing.Size(24, 25)
+        Me.lblSaturation.Size = New System.Drawing.Size(98, 25)
         Me.lblSaturation.TabIndex = 3
-        Me.lblSaturation.Text = "0"
+        Me.lblSaturation.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblLightness
         '
-        Me.lblLightness.AutoSize = True
         Me.lblLightness.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLightness.Location = New System.Drawing.Point(485, 12)
+        Me.lblLightness.Location = New System.Drawing.Point(575, 170)
         Me.lblLightness.Name = "lblLightness"
-        Me.lblLightness.Size = New System.Drawing.Size(24, 25)
+        Me.lblLightness.Size = New System.Drawing.Size(97, 25)
         Me.lblLightness.TabIndex = 4
-        Me.lblLightness.Text = "0"
+        Me.lblLightness.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'Timer1
         '
@@ -93,7 +90,7 @@ Partial Class Form1
         '
         Me.lblHPrompt.AutoSize = True
         Me.lblHPrompt.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblHPrompt.Location = New System.Drawing.Point(166, 12)
+        Me.lblHPrompt.Location = New System.Drawing.Point(536, 41)
         Me.lblHPrompt.Name = "lblHPrompt"
         Me.lblHPrompt.Size = New System.Drawing.Size(33, 25)
         Me.lblHPrompt.TabIndex = 5
@@ -103,7 +100,7 @@ Partial Class Form1
         '
         Me.lblSPrompt.AutoSize = True
         Me.lblSPrompt.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblSPrompt.Location = New System.Drawing.Point(308, 12)
+        Me.lblSPrompt.Location = New System.Drawing.Point(536, 100)
         Me.lblSPrompt.Name = "lblSPrompt"
         Me.lblSPrompt.Size = New System.Drawing.Size(32, 25)
         Me.lblSPrompt.TabIndex = 6
@@ -113,7 +110,7 @@ Partial Class Form1
         '
         Me.lblLPrompt.AutoSize = True
         Me.lblLPrompt.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLPrompt.Location = New System.Drawing.Point(447, 11)
+        Me.lblLPrompt.Location = New System.Drawing.Point(536, 170)
         Me.lblLPrompt.Name = "lblLPrompt"
         Me.lblLPrompt.Size = New System.Drawing.Size(30, 25)
         Me.lblLPrompt.TabIndex = 7
@@ -123,7 +120,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(552, 450)
+        Me.ClientSize = New System.Drawing.Size(684, 448)
         Me.Controls.Add(Me.lblLPrompt)
         Me.Controls.Add(Me.lblSPrompt)
         Me.Controls.Add(Me.lblHPrompt)
@@ -132,6 +129,8 @@ Partial Class Form1
         Me.Controls.Add(Me.lblHue)
         Me.Controls.Add(Me.picImage)
         Me.Controls.Add(Me.btnSelectImage)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "HSL Value Finder"
         CType(Me.picImage, System.ComponentModel.ISupportInitialize).EndInit()
